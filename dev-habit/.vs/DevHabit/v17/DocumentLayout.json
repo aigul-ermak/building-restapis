@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\src\\practise\\DevHabit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\src\\practise\\devhabit\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|c:\\src\\practise\\devhabit\\devhabit\\devhabit.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|solutionrelative:devhabit\\devhabit.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|c:\\src\\practise\\devhabit\\devhabit\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|solutionrelative:devhabit\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|c:\\src\\practise\\devhabit\\devhabit\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|solutionrelative:devhabit\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|c:\\src\\practise\\devhabit\\devhabit\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|solutionrelative:devhabit\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|c:\\src\\practise\\devhabit\\devhabit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80FD09DF-1C0E-4F2E-A81F-A109CB7B7A52}|DevHabit\\DevHabit.csproj|solutionrelative:devhabit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 310,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DevHabit.http",
+              "DocumentMoniker": "C:\\src\\practise\\DevHabit\\DevHabit\\DevHabit.http",
+              "RelativeDocumentMoniker": "DevHabit\\DevHabit.http",
+              "ToolTip": "C:\\src\\practise\\DevHabit\\DevHabit\\DevHabit.http",
+              "RelativeToolTip": "DevHabit\\DevHabit.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-12T13:43:27.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\src\\practise\\DevHabit\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\src\\practise\\DevHabit\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-06-12T13:09:10.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\src\\practise\\DevHabit\\DevHabit\\Dockerfile",
+              "RelativeDocumentMoniker": "DevHabit\\Dockerfile",
+              "ToolTip": "C:\\src\\practise\\DevHabit\\DevHabit\\Dockerfile",
+              "RelativeToolTip": "DevHabit\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T13:07:50.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\src\\practise\\DevHabit\\DevHabit\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "DevHabit\\WeatherForecast.cs",
+              "ToolTip": "C:\\src\\practise\\DevHabit\\DevHabit\\WeatherForecast.cs",
+              "RelativeToolTip": "DevHabit\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T13:06:29.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\src\\practise\\DevHabit\\DevHabit\\Program.cs",
+              "RelativeDocumentMoniker": "DevHabit\\Program.cs",
+              "ToolTip": "C:\\src\\practise\\DevHabit\\DevHabit\\Program.cs",
+              "RelativeToolTip": "DevHabit\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T13:04:18.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\src\\practise\\DevHabit\\DevHabit\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "DevHabit\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\src\\practise\\DevHabit\\DevHabit\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "DevHabit\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T12:51:50.724Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 90,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
