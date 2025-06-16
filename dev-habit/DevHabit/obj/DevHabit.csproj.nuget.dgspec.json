@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\practise\\DevHabit\\DevHabit\\DevHabit.csproj": {}
+    "C:\\src\\practise\\DevHabit\\dev-habit\\DevHabit\\DevHabit.csproj": {}
   },
   "projects": {
-    "C:\\src\\practise\\DevHabit\\DevHabit\\DevHabit.csproj": {
+    "C:\\src\\practise\\DevHabit\\dev-habit\\DevHabit\\DevHabit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\practise\\DevHabit\\DevHabit\\DevHabit.csproj",
+        "projectUniqueName": "C:\\src\\practise\\DevHabit\\dev-habit\\DevHabit\\DevHabit.csproj",
         "projectName": "DevHabit",
-        "projectPath": "C:\\src\\practise\\DevHabit\\DevHabit\\DevHabit.csproj",
+        "projectPath": "C:\\src\\practise\\DevHabit\\dev-habit\\DevHabit\\DevHabit.csproj",
         "packagesPath": "C:\\Users\\aigul\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\practise\\DevHabit\\DevHabit\\obj\\",
+        "outputPath": "C:\\src\\practise\\DevHabit\\dev-habit\\DevHabit\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
@@ -52,7 +52,19 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "EFCore.NamingConventions": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            },
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.6, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.6, )",
               "versionCentrallyManaged": true
@@ -60,6 +72,11 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.22.1-Preview.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )",
               "versionCentrallyManaged": true
             },
             "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
@@ -96,8 +113,11 @@
             }
           },
           "centralPackageVersions": {
+            "EFCore.NamingConventions": "9.0.0",
             "Microsoft.AspNetCore.OpenApi": "9.0.6",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.6",
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.22.1-Preview.1",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
             "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.12.0",
             "OpenTelemetry.Extensions.Hosting": "1.12.0",
             "OpenTelemetry.Instrumentation.AspNetCore": "1.12.0",

@@ -14,8 +14,20 @@ services:
       # Aspire Dashboard
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://devhabit.aspire-dashboard:18889
       - OTEL_EXPORTER_OTLP_PROTOCOL=grpc
+
+  devhabit.postgres:
+    image: postgres:17.2
+    environment:
+      POSTGRES_DB: devhabit
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres  
+    volumes:
+      - ./.containers/postres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
   devhabit.seq:
-    image: datalust/seq:2024.3 # or latest
+    image: datalust/seq:2024.3
     environment:
       ACCEPT_EULA: "Y"
     volumes:
@@ -23,9 +35,10 @@ services:
     ports:
       - "8080:80"
       - "5341:5341"
+
   devhabit.aspire-dashboard:
     image: mcr.microsoft.com/dotnet/aspire-dashboard:9.0
     environment:
-      DOTNET_DASHBOARD_UNSECURED_ALLOW_ANONYMOUS: true
+      DOTNET_DASHBOARD_UNSECURED_ALLOW_ANONYMOUS: "true"
     ports:
       - "18888:18888"
