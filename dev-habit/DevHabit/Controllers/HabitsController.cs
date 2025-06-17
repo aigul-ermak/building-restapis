@@ -89,11 +89,12 @@ public sealed class HabitsController(ApplicationDbContext dbContext) : Controlle
             })
             .FirstOrDefaultAsync();
 
-        if(habit is null)
+        if (habit is null)
         {
             return NotFound();
         }
 
         return Ok(habit);
     }
+
 }
