@@ -1,4 +1,5 @@
 ﻿using DevHabit.Entities;
+using Newtonsoft.Json;
 
 namespace DevHabit.DTOs.Habits;
 
@@ -7,10 +8,13 @@ public sealed record HabitsCollectionDto
     public List<HabitDto> Data { get; init; }
 }
 
-//Request/Response
-//CreateHabitRequest/HabitResponse
-//Model
-public sealed record HabitDto
+public sealed record HabitWithTagDto : HabitDto
+{
+    [JsonProperty(Order = int.MaxValue)]
+    public required string[] Tags { get; set; }
+}
+
+public record HabitDto
 {
     public required string Id { get; set; }
     public required string Name { get; set; } = string.Empty;

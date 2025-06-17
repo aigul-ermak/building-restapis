@@ -46,6 +46,23 @@ public sealed class HabitsController(ApplicationDbContext dbContext) : Controlle
         return Ok(habit);
     }
 
+    //[HttpGet("{id}")]
+    //public async Task<ActionResult<HabitDto>> GetHabit(string id)
+    //{
+    //    HabitDto? habit = await dbContext
+    //        .Habits
+    //        .Where(h => h.Id == id)
+    //        .Select(HabitQueries.ProjectToDto())
+    //        .FirstOrDefaultAsync();
+
+    //    if (habit is null)
+    //    {
+    //        return NotFound();
+    //    }
+
+    //    return Ok(habit);
+    //}
+
 
     [HttpPost]
     public async Task<ActionResult<HabitDto>> CreateHabit(CreateHabitDto createHabitDto)
@@ -60,23 +77,7 @@ public sealed class HabitsController(ApplicationDbContext dbContext) : Controlle
 
         return CreatedAtAction(nameof(GetHabit), new { id = habit.Id }, habitDto);
     }
-
-    [HttpPut("{id}")]
-    public async Task<ActionResult> UpdateHabit(string id, [FromBody] UpdateHabitDto updateHabitDto)
-    {
-        Habit? habit = await dbContext.Habits.FirstOrDefaultAsync(h => h.Id == id);
-
-        if (habit is null)
-        {
-            return NotFound();
-        }
-
-        habit.UpdateFromDto(updateHabitDto);
-
-        await dbContext.SaveChangesAsync();
-
-        return NoContent();
-    }
+ 
 
     [HttpPatch("{id}")]
     public async Task<ActionResult> PatchHabit(string id, JsonPatchDocument<HabitDto> patchDocument)
