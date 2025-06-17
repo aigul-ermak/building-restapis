@@ -90,7 +90,7 @@ public static class HabitMappings
             Unit = dto.Target.Unit
         };
 
-        if(dto.Milestone != null)
+        if (dto.Milestone != null)
         {
             habit.Milestone ??= new Milestone();
             habit.Milestone.Target = dto.Milestone.Target;
