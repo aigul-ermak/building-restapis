@@ -1,5 +1,10 @@
-﻿namespace DevHabit.Database;
+﻿using Microsoft.EntityFrameworkCore;
 
-public class DBContext
+namespace DevHabit.Database;
+
+public class DBContext :DbContext
 {
+    public DBContext(DbContextOptions<DBContext> options) : base(options)
+    {
+    }
 }
