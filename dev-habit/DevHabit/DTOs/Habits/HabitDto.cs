@@ -2,6 +2,11 @@
 
 namespace DevHabit.DTOs.Habits;
 
+public sealed record HabitsCollectionDto
+{
+    public List<HabitDto> Data { get; init; }
+}
+
 //Request/Response
 //CreateHabitRequest/HabitResponse
 //Model
