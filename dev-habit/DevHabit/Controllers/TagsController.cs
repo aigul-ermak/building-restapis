@@ -49,7 +49,7 @@ public sealed class TagsController(ApplicationDbContext dbContext) : ControllerB
 
     [HttpPost]
     public async Task<ActionResult<TagDto>> CreateTag(
-        CreateTagDto createTagDto
+        CreateTagDto createTagDto)
         //IValidator<CreateTagDto> validator,
         //ProblemDetailsFactory problemDetailsFactory)
     {

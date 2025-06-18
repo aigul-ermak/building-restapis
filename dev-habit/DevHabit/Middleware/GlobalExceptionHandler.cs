@@ -13,14 +13,15 @@ public sealed class GlobalExceptionHandler(IProblemDetailsService problemDatails
         CancellationToken cancellationToken
         )
     {
-        return problemDatailsService.TryWriteAsync(new ProblemDetailsContext { 
-            HttpContext = httpContext,
-        Exception = exception,
-        ProblemDetails = new ProblemDetails
+        return problemDatailsService.TryWriteAsync(new ProblemDetailsContext
         {
-            Title = "Internal Server Error",
-            Detail = "AN error occured while processing your request. Please try again."
-        }
+            HttpContext = httpContext,
+            Exception = exception,
+            ProblemDetails = new ProblemDetails
+            {
+                Title = "Internal Server Error",
+                Detail = "AN error occured while processing your request. Please try again."
+            }
         });
     }
 }

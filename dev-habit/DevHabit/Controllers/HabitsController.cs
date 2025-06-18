@@ -14,10 +14,20 @@ namespace DevHabit.Controllers;
 public sealed class HabitsController(ApplicationDbContext dbContext) : ControllerBase
 {
     [HttpGet]
-    public async Task<ActionResult<HabitDto>> GetHabits()
+    public async Task<ActionResult<HabitsCollectionDto>> GetHabits(string? search,
+        HabitType? type,
+        HabitStatus? status)
     {
-        List<HabitDto> habits = await dbContext
+        search ??= search?.Trim().ToLower();
+
+        List<HabitDto> habits = dbContext
             .Habits
+            .Where(h =>
+                search == null ||
+                h.Name.ToLower().Contains(search) ||
+                h.Description != null && h.Description.ToLower().Contains(search))
+            .Where(h => type == null || h.Type == type)
+            .Where(h => status == null || h.Status == status)
             .Select(HabitQueries.ProjectToDto())
             .ToListAsync();
 

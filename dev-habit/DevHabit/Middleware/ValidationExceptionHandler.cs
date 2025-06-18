@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DevHabit.Middleware;
 
-public class ValidationExceptionHandler(IProblemDetailsService problemDatailsService) : IExceptionHandler)
+public class ValidationExceptionHandler(IProblemDetailsService problemDatailsService) : IExceptionHandler
 {
     public async ValueTask<bool> TryHandleAsync(
         HttpContext httpContext,
@@ -16,7 +16,9 @@ public class ValidationExceptionHandler(IProblemDetailsService problemDatailsSer
         {
             return false;
         }
+
         httpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
+
         var context = new ProblemDetailsContext
         {
             HttpContext = httpContext,
