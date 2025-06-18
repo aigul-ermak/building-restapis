@@ -1,5 +1,6 @@
 using DevHabit.Database;
 using DevHabit.Extensions;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql;
@@ -16,6 +17,8 @@ builder.Services.AddControllers(options =>
 })
     .AddNewtonsoftJson()
     .AddXmlDataContractSerializerFormatters();
+
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 
 builder.Services.AddOpenApi();
 
