@@ -49,21 +49,21 @@ public sealed class TagsController(ApplicationDbContext dbContext) : ControllerB
 
     [HttpPost]
     public async Task<ActionResult<TagDto>> CreateTag(
-        CreateTagDto createTagDto, 
-        IValidator<CreateTagDto> validator,
-        ProblemDetailsFactory problemDetailsFactory)
+        CreateTagDto createTagDto
+        //IValidator<CreateTagDto> validator,
+        //ProblemDetailsFactory problemDetailsFactory)
     {
-        ValidationResult validationResult = await validator.ValidateAsync(createTagDto);
+        //ValidationResult validationResult = await validator.ValidateAsync(createTagDto);
 
-        if(!validationResult.IsValid)
-        {
-            ProblemDetails problem = problemDetailsFactory.CreateProblemDetails(
-                HttpContext, 
-                StatusCodes.Status400BadRequest
-                );
-            problem.Extensions.Add("errors", validationResult.ToDictionary());
-            return BadRequest(problem);
-        }
+        //if(!validationResult.IsValid)
+        //{
+        //    ProblemDetails problem = problemDetailsFactory.CreateProblemDetails(
+        //        HttpContext, 
+        //        StatusCodes.Status400BadRequest
+        //        );
+        //    problem.Extensions.Add("errors", validationResult.ToDictionary());
+        //    return BadRequest(problem);
+        //}
 
         Tag tag = createTagDto.ToEntity();
 
