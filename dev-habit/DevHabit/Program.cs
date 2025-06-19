@@ -1,3 +1,4 @@
+using DevHabit;
 using DevHabit.Database;
 using DevHabit.Extensions;
 using DevHabit.Middleware;
@@ -12,45 +13,15 @@ using OpenTelemetry.Trace;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers(options =>
-{
-    options.ReturnHttpNotAcceptable = true;
-})
-    .AddNewtonsoftJson()
-    .AddXmlDataContractSerializerFormatters();
+builder
+    .AddControllers()
+    .AddDatabase()
+    .AddObservability();
 
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
-
 builder.Services.AddExceptionHandler<ValidationExceptionHandler>();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
-builder.Services.AddOpenApi();
-
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options
-        .UseNpgsql(
-            builder.Configuration.GetConnectionString("Database"),
-            npgsqlOptions => npgsqlOptions
-            .MigrationsHistoryTable(HistoryRepository.DefaultTableName, Schemas.Application))
-            .UseSnakeCaseNamingConvention());
-
-builder.Services.AddOpenTelemetry()
-    .ConfigureResource(resource => resource.AddService(builder.Environment.ApplicationName))
-    .WithTracing(tracing => tracing
-        .AddHttpClientInstrumentation()
-        .AddAspNetCoreInstrumentation()
-        .AddNpgsql())
-    .WithMetrics(metrics => metrics
-        .AddHttpClientInstrumentation()
-        .AddAspNetCoreInstrumentation()
-        .AddRuntimeInstrumentation())
-    .UseOtlpExporter();
-
-builder.Logging.AddOpenTelemetry(options =>
-{
-    options.IncludeScopes = true;
-    options.IncludeFormattedMessage = true;
-});
 
 WebApplication app = builder.Build();
 
